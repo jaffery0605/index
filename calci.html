@@ -1,0 +1,44 @@
+<html>
+<head>
+ <title>Document</title>
+</head>
+<center>
+<body style="padding-top:100px8p; background-color:orange;">
+<h3>Simple Calculator</h3>
+NUMBER1:<input type="number" id="field1"  placeholder="input 1"></input></br>
+NUMBER2:<input type="number" id="field2" placeholder="input 2"></input></br>
+<button onclick="addition()">Add</button>
+<button onclick="sub()">
+Sub</botton>
+<button onclick="multi()">
+Multi
+</button>
+<button onclick="div()">
+Div
+</button></br>
+result<input type="number" id ="result" >
+<script>
+
+function addition(){
+ var a=document.getElementById('field1').value;
+ var b=document.getElementById('field2').value;
+document.getElementById('result').value=Number(a)+Number(b);}
+
+function sub(){
+ var a=document.getElementById('field1').value;
+ var b=document.getElementById('field2').value;
+document.getElementById('result').value=Number(a)-Number(b);}
+function multi(){
+ var a=document.getElementById('field1').value;
+ var b=document.getElementById('field2').value;
+document.getElementById('result').value=Number(a)*Number(b);}
+function div(){
+ var a=document.getElementById('field1').value;
+ var b=document.getElementById('field2').value;
+document.getElementById('result').value=Number(a)/Number(b);}
+</script>
+
+</center>
+</body>
+
+</html> 
