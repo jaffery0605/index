@@ -1,0 +1,21 @@
+ul li img{
+  width:200px;
+  height:200px;
+}
+ul{
+  padding-inline-start:0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+ul li{
+  list-style: none;
+  box-shadow: 0px 20px 65px -20px #fff;
+  background-color: grey;
+  padding: 20px;
+}
+ul li:hover{
+  background-color: green;
+  cursor: pointer;
+}
