@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<title>form</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="form">
+<div class="master">
+<input type="text" id="username">
+<label>username</label>
+</div>
+<div class="master">
+<input type="text" id="mobile">
+<label>mobile no.</label>
+</div>
+<div class="master">
+<input type="text" id="email">
+<label>email</label>
+</div>
+<div class="master">
+<input type="text" id="coll">
+<label>college name</label>
+</div>
+<div class="master">
+<button onclick="save()">save</button>
+</div>
+</div>
+<div class="table">
+<table id="tabledata">
+<thead>
+<tr>
+<th>username</th>
+<th>mobile</th>
+<th>email</th>
+<th>college</th>
+</tr>
+</thead>
+</table>
+</div>
+</body>
+<script>
+function save(){
+console.log('save data');
+var name=document.getElementById('username').value,
+    mobile=document.getElementById('mobile').value,
+    email=document.getElementById('email').value,
+    coll=document.getElementById('coll').value;
+    console.log(name);
+    createtable(name,mobile,email,coll);
+}
+function createtable(name,mobile,email,coll){
+    console.log('create table');
+    var table=document.getElementById('tabledata');
+    var row=table.insertRow('1');
+    var col=row.insertCell('0');
+    var col1=row.insertCell('1');
+    var col2=row.insertCell('2');
+    var col3=row.insertCell('3');
+col.innerHTML = name;
+col1.innerHTML =mobile;
+col2.innerHTML = email;
+col3.innerHTML = coll;
+}
+</script>
+
+</html>
+
