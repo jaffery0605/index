@@ -1,0 +1,58 @@
+* {
+  padding: 5px;
+  margin: 10px;
+ 
+}
+body {
+  background-color: #ffffff ;
+}
+.calculator {
+  width: 350px;
+  height: 150px;
+  background-color: #c0c0c0;
+  box-shadow: 0px 0px 0px 10px #000000;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+display {
+  width: 320px;
+  height: 40px;
+  text-align: right;
+  background-color: white;
+  border: 3px solid black;
+  font-size: 18px;
+  left: 2px;
+  top: 2px;
+  color: #7fff00;
+}
+.btnTop{
+  color: black;
+  background-color: #6f6f6f;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 40px;
+}
+.btnNum {
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 40px;
+}
+.btnMath {
+  color: white;
+  background-color:  #ff5733;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+}
+.btnOpps {
+  color: white;
+  background-color:  #ff5733;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 40px;
+}
